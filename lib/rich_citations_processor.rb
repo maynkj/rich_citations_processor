@@ -31,4 +31,41 @@ require 'rich_citations_processor/extensions'
 require 'rich_citations_processor/config'
 require 'rich_citations_processor/initialization'
 require 'rich_citations_processor/uri'  # Required because URI is also a root class
+require 'rich_citations_processor/base'
+require 'rich_citations_processor/version'
+require 'rich_citations_processor/extensions'
+require 'rich_citations_processor/config'
+require 'rich_citations_processor/initialization'
+require 'rich_citations_processor/uri'  # Required because URI is also a root class
+require "rich_citations_processor/parsers"
+require "rich_citations_processor/parsers/base"
+require "rich_citations_processor/parsers/registry"
+require "rich_citations_processor/parsers/citation_grouper"
+require "rich_citations_processor/parsers/jats"
+require "rich_citations_processor/parsers/jats/author_parser"
+require "rich_citations_processor/parsers/jats/citation_group_parser"
+require "rich_citations_processor/parsers/jats/jats_to_html"
+require "rich_citations_processor/parsers/jats/reference_parser"
 
+require "rich_citations_processor/models/base"
+require "rich_citations_processor/models/paper"
+require "rich_citations_processor/models/citing_paper"
+require "rich_citations_processor/models/author"
+require "rich_citations_processor/models/citation_group"
+require "rich_citations_processor/models/cited_paper"
+require "rich_citations_processor/models/collection"
+require "rich_citations_processor/models/duplicate_error"
+require "rich_citations_processor/models/reference.rb"
+
+require "rich_citations_processor/uri"
+require "rich_citations_processor/uri/base"
+require "rich_citations_processor/uri/registry"
+require "rich_citations_processor/uri/doi"
+require "rich_citations_processor/uri/isbn"
+require "rich_citations_processor/uri/wrapper"
+
+require "rich_citations_processor/xml_utilities"
+require "rich_citations_processor/serializers"
+require "rich_citations_processor/serializers/base"
+require "rich_citations_processor/serializers/registry"
+require "rich_citations_processor/serializers/json"
